@@ -1,0 +1,309 @@
+/**************************/
+/**************************/
+/*        Global          */
+/**************************/
+/**************************/
+html,
+body {
+  font-size: 16px;
+}
+@media (max-width: 568px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0 !important;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/**************************/
+/**************************/
+/*        hero            */
+/**************************/
+/**************************/
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero__bg {
+  background: url("../images/main-bg.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 999;
+  top: -10%;
+  right: -15%;
+  width: 50%;
+  height: 100%;
+  transform: scale(1.15);
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero__bg {
+    display: block;
+  }
+}
+
+/**************************/
+/**************************/
+/*        navbar          */
+/**************************/
+/**************************/
+.navbar {
+  background: rgb(28, 29, 51);
+  padding-block: 1rem;
+}
+.navbar__items {
+  display: flex;
+}
+@media (max-width: 568px) {
+  .navbar__items {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.navbar__items .item {
+  margin-inline-end: 1rem;
+}
+.navbar__items .item:last-of-type {
+  margin-inline-end: 0;
+}
+.navbar__items .item a {
+  color: white;
+}
+@media (max-width: 568px) {
+  .navbar__items .item {
+    margin-inline-end: 0;
+  }
+}
+
+/**************************/
+/**************************/
+/*        Services        */
+/**************************/
+/**************************/
+.main {
+  background: rgb(28, 29, 51);
+  padding-bottom: 3.5rem;
+}
+.main__logo {
+  padding-block: 2rem 1rem;
+}
+.main__logo img {
+  width: 100%;
+}
+.main__mobile-bg img {
+  width: 100%;
+}
+.main__btn {
+  width: 100%;
+  padding-block: 1rem;
+  background-color: rgb(10, 152, 48);
+  border-radius: 50px;
+  position: relative;
+}
+.main__btn a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+.main__btn:hover, .main__btn:focus {
+  background-color: rgb(10, 152, 48) !important;
+}
+.main__btn:active {
+  background-color: rgba(10, 152, 48, 0.9) !important;
+}
+
+/**************************/
+/**************************/
+/*        Services        */
+/**************************/
+/**************************/
+.services {
+  padding-block: 3.5rem;
+}
+.services__subtitle {
+  color: rgb(10, 152, 48);
+  font-size: 1.35rem;
+  font-weight: bold;
+  text-align: center;
+}
+.services__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(28, 29, 51);
+  margin-bottom: 1.25rem;
+}
+.services__p {
+  text-align: justify;
+  font-size: 1.15rem;
+  color: rgb(112, 112, 112);
+}
+
+/**************************/
+/**************************/
+/*        How             */
+/**************************/
+/**************************/
+.how {
+  color: rgb(248, 248, 248);
+}
+.how__header h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(28, 29, 51);
+  margin-bottom: 40px;
+}
+.how__content > div:nth-child(2n) .item {
+  flex-direction: column-reverse;
+}
+@media (max-width: 991px) {
+  .how__content > div:nth-child(2n) .item {
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+  }
+}
+.how__content .item {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 568px) {
+  .how__content .item {
+    margin-bottom: 2rem;
+  }
+}
+.how__content .item .number {
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: rgb(10, 152, 48);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.how__content .item .desc {
+  color: rgb(10, 152, 48);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.how__content .item figure {
+  margin-bottom: 0;
+}
+.how__content .item figure img {
+  width: 100%;
+}
+
+/**************************/
+/**************************/
+/*        Download        */
+/**************************/
+/**************************/
+.download {
+  margin-block: 3.75rem 1.875rem;
+}
+.download__header h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(28, 29, 51);
+  margin-bottom: 1.25rem;
+}
+.download__desc {
+  font-size: 1.15rem;
+  color: rgb(112, 112, 112);
+}
+@media (max-width: 768px) {
+  .download__desc {
+    margin-bottom: 1.875rem;
+  }
+}
+.download__content figure img {
+  width: 100%;
+}
+.download__app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 568px) {
+  .download__app {
+    margin-bottom: 1.5rem;
+    display: none;
+  }
+}
+.download__btns {
+  display: flex;
+  align-items: center;
+}
+
+/**************************/
+/**************************/
+/*        Footer          */
+/**************************/
+/**************************/
+.footer {
+  background: rgb(28, 29, 51);
+  padding-block: 1rem;
+}
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 568px) {
+  .footer__links {
+    justify-content: space-around;
+  }
+}
+.footer__links .item {
+  margin-inline-end: 1rem;
+  list-style-type: none;
+}
+.footer__links .item:last-of-type {
+  margin-inline-end: 0;
+}
+@media (max-width: 568px) {
+  .footer__links .item {
+    margin-inline-end: 0;
+  }
+}
+.footer__links a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.footer__links a:hover, .footer__links a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
