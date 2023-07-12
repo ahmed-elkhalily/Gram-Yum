@@ -50,11 +50,12 @@ a {
   overflow: hidden;
   &__bg {
     background: url("../images/main-bg.png") no-repeat;
+    background-position: right;
     background-size: contain;
     position: absolute;
     z-index: 999;
     top: -10%;
-    left: 66%;
+    right: 0%;
     width: 50%;
     height: 100%;
     transform: scale(1.15);
